@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.node-list {
+  margin-top: 70px;
+}
+
+.node {
+  display: inline-block;
+}
+
+.node span {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  padding: 8px;
+  transition: 1s all;
+}
+
+.node:before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 0px;
+  margin-bottom: 4px;
+  line-height: 1px;
+  border: 1px solid #333;
+  border-width: 1px 0 0;
+  
+}
+
+.zoom {
+  transform: scale(2);
+}/*# sourceMappingURL=style.css.map */
+
+body{
+ background: rgb(238,177,204);
+  background: radial-gradient(circle, rgba(238,177,204,1) 0%, rgba(169,203,244,0.9223039557619923) 100%);;
+}
+h1{
+  text-align: center;
+  color: white;
+
+  text-shadow: 1px 1px 1px #957dad,
+             1px 2px 1px #957dad,
+             1px 3px 1px #957dad,
+             1px 4px 1px #957dad,
+             1px 5px 1px #957dad,
+             1px 6px 1px #957dad,
+             1px 10px 5px rgba(16, 16, 16, 0.5),
+             1px 15px 10px rgba(16, 16, 16, 0.4),
+             1px 20px 30px rgba(16, 16, 16, 0.3),
+             1px 25px 50px rgba(16, 16, 16, 0.2);
+             font-family: 'Lobster', cursive;
+          
+  font-size: 70px;
+}
+
+.navbar h1:before {
+  width: 28px;
+  height: 5px;
+  display: block;
+  content: "";
+  position: relative;
+  top: 120px;
+  left: 50%;
+  margin-left: -14px;
+  background-color: #b80000;
+}
+.navbar h1:after {
+  width: 100px;
+  height: 2px;
+  display: block;
+  content: "";
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #b80000;
+}
+
+
+.input{
+text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+ height: 500px;
+ width: 500px;
+ margin-left: 480px;
+}
+
+.input:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 1.5s;
+  
+}
+
+.value{
+  width: 50%;
+  height: 30px;
+  position: relative;
+  top: 20px;
+  left: 100px;;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: block;
+  
+}
+
+.value:hover{
+  transition: 1s;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: 0.3s;
+}
+
+.js-submit{
+  border: 1px solid transparent;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+
+
+.js-remove{
+  border: 1px solid transparent;
+
+}
+.js-find{
+  border: 1px solid transparent;
+  display: block;
+  margin-top: 100px;
+  margin-left: 220px;
+
+}
