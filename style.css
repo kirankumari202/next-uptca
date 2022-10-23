@@ -40,7 +40,8 @@
 
 body{
  background: rgb(238,177,204);
-  background: radial-gradient(circle, rgba(238,177,204,1) 0%, rgba(169,203,244,0.9223039557619923) 100%);;
+  background: radial-gradient(circle, rgba(238,177,204,1) 0%, rgba(169,203,244,0.9223039557619923) 100%);
+  
 }
 h1{
   text-align: center;
@@ -391,5 +392,107 @@ path.two {
   font-family: 'Lobster', cursive;
   letter-spacing: 2px;
   font-size: 20px;
+  
+}
+/**footer design **/
+footer{
+
+  position: relative;
+  width: 100%;
+  background:#3586ff;
+  padding: 30px 90px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+footer .social_icon
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+footer .social_icon li{
+  list-style: none;
+}
+footer .social_icon li a
+{
+  font-size: 2rem;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transform: 0.5s;
+  margin-top: 40px;
+}
+footer .social_icon li a:hover
+{
+  transform: translateY(-10px);
+}
+
+footer .wave
+{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png);
+  margin-top: 90px;
+  background-size: 1000px 100px;
+}
+footer .wave#wave1
+{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2
+{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3
+{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4
+{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave {
+  0%
+  {
+    background-position-x: 1000px;
+  }
+  100%
+  {
+    background-position-x: 0px;
+  }
+  
+}
+
+@keyframes animateWave_02 {
+  0%
+  {
+    background-position-x: 0px;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
   
 }
