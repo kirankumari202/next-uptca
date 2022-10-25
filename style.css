@@ -92,13 +92,19 @@ text-align: center;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
  height: 500px;
  width: 500px;
- margin-left: 490px;
- padding-top: 40px;
+ padding: 3%;
+ margin: auto;
+ width: 50%;
+ border-radius: 22% 7% 19% 7%;
+ transition: all 1s linear;
+
+
 }
 
 .input:hover{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  transition: 1.5s;
+ 
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: 1s;
   
 }
 
@@ -141,8 +147,8 @@ text-align: center;
 
 
 .js-submit{
-  min-width: 100px;
-  min-height: 60px;
+  min-width: 105px;
+  min-height: 45px;
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   text-transform: uppercase;
@@ -165,10 +171,10 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 
 .js-remove{
   border: 1px solid transparent;
-  min-width: 100px;
-  min-height: 60px;
+  min-width: 70px;
+  min-height: 40px;
   font-family: 'Nunito', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-weight: 700;
@@ -496,3 +502,5 @@ footer .wave#wave4
   }
   
 }
+
+/**background effect**/
