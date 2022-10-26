@@ -90,7 +90,7 @@ h1{
 .input{
 text-align: center;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
- height: 500px;
+ height: 555px;
  width: 500px;
  padding: 3%;
  margin: auto;
@@ -115,7 +115,7 @@ text-align: center;
   background: #6dd6d1;
   border: none;
   top: 20px;
-  left: 120px;;
+  left: 180px;;
   border-radius: 10px;
   border: 1px solid transparent;
   display: block;
@@ -504,3 +504,8 @@ footer .wave#wave4
 }
 
 /**background effect**/
+h2{
+  font-family: 'Cookie', cursive;
+  font-size: 40px;
+
+}
