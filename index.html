@@ -70,10 +70,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-    
-
 </body>
 
 <script>
@@ -92,18 +88,6 @@
             ref = ref.next
         };
         ref.next = new Node(value)
-    }
-
-    LinkedList.prototype.findNode = function(value) {
-        var ref = this.next;
-        while (ref != null) {
-            if (ref.data == value) {
-                return ref
-            }
-            ref = ref.next
-        };
-
-        return null
     }
 
     LinkedList.prototype.removeNode = function(value) {
@@ -125,11 +109,9 @@
 
     var ll = new LinkedList();
 
-    //ll.addNode(new Node(10));
+    
 
     var submit = document.getElementsByClassName('js-submit')[0];
-
-    var find = document.getElementsByClassName('js-find')[0];
 
     var remove = document.getElementsByClassName('js-remove')[0];
 
@@ -147,7 +129,7 @@
         let arr = [];
 
         while(ref != null) {
-            // console.log(ref.data);
+             console.log(ref.data);
             arr.push(ref.data);
             ref = ref.next;
         }
@@ -189,24 +171,6 @@
         }
 
     })
-
-    function _zoom(ref, flag) {
-        if (flag) {
-            console.log(ref)
-            for (i in ref) {
-                if (typeof ref[i] == 'object') {
-                    ref[i].classList.add('zoom')
-                }
-            }
-        } else {
-            for (i in ref) {
-                if (typeof ref[i] == 'object') {
-                    ref[i].classList.remove('zoom')
-                }
-            }
-            0
-        }
-    }
 
     function renderView() {
         var str = '',
